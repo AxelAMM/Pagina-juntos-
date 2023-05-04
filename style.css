@@ -20,13 +20,17 @@
 	margin-right: 20px;
 }
 
-.carrera-detallada {
+.proyecto {
 	display: none;
 	padding: 50px 0;
 	background-color: #d9d9d9;
 }
 
-.carrera-detallada:target {
+.proyecto:target {
+	display: block;
+}
+
+.proyecto:target {
 	display: block;
 }
 
@@ -39,3 +43,4 @@
 .proyecto-detallado:target {
 	display: block;
 }
+

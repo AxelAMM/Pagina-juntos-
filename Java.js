@@ -1,1 +1,1 @@
-Hola
+document.querySelector('#proyecto').scrollIntoView();
