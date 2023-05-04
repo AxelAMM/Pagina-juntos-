@@ -1,0 +1,41 @@
+.bienvenida {
+	text-align: center;
+	padding: 50px 0;
+	background-color: #f2f2f2;
+}
+
+.carrera {
+	padding: 50px 0;
+	background-color: #e6e6e6;
+}
+
+.carrera ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.carrera li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.carrera-detallada {
+	display: none;
+	padding: 50px 0;
+	background-color: #d9d9d9;
+}
+
+.carrera-detallada:target {
+	display: block;
+}
+
+.proyecto-detallado {
+	display: none;
+	padding: 50px 0;
+	background-color: #d9d9d9;
+}
+
+.proyecto-detallado:target {
+	display: block;
+}

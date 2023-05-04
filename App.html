@@ -1,34 +1,60 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <title>Mi sitio web</title>
-    <link rel="stylesheet" href="estilo.css">
-  </head>
-  <body>
-    <header>
-      <h1>Mi sitio web</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Leonel Es gai</a></li>
-        <li><a href="#">Leonel Es gaisisisi</a></li>
-        <li><a href="#">Leonel Es gaisisisaaaaaaaaai</a></li>
-        <li><a href="#">Leonel Es gaisisisaaaaaaaaaaaai</a></li>
-        <li><a href="#">prueba cambio</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h2>Bienvenido a mi sitio web</h2>
-      <p>Este es un sitio web básico que contiene un encabezado, un menú de navegación y un contenido principal.</p>
-    </main>
-    <script src="script.js"></script>
-  </body>
+<html>
+<head>
+	<title>Proyecto de Axel y Julio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<!-- Bienvenida -->
+	<div class="bienvenida">
+		<h1>Bienvenido a nuestra web</h1>
+		<p>En esta web encontraras diferentes proyectos que hemos reunido y para ser presentados a todos.</p>
+		<p>Estos proyectos fueron creados por alumnos de diferentes carreras de Centro Educativo Integral Cristiano -CEIC-</p>
+
+  </div>
+	<!-- Carreras -->
+  <div class="carrera">
+		<h2>Proyectos creados por carrera</h2>
+		<ul>
+			<li><a href="#Carrera1">Carrera 1</a></li>
+			<li><a href="#Carrera2">Carrera 2</a></li>
+			<li><a href="#Carrera3">Carrera 3</a></li>
+		</ul>
+	</div>
+
+	<!-- Proyectos -->
+	<div class="carrera-detallada" id="Carrera1">
+		<h2>Proyectos creados por los alumnos de Perito Contador</h2>
+		<ul>
+			<li><a href="#proyecto1">Proyecto 1</a></li>
+			<li><a href="#proyecto2">Proyecto 2</a></li>
+			<li><a href="#proyecto3">Proyecto 3</a></li>
+		</ul>
+	</div>
+
+	<!-- Detalles de los proyectos carrera 1 -->
+	<div class="proyecto-detallado" id="proyecto1">
+		<h3>Proyecto 1</h3>
+		<p>Detalles del proyecto 1.</p>
+		<a href="#proyectos">Volver a la sección de proyectos</a>
+	</div>
+
+	<div class="proyecto-detallado" id="proyecto2">
+		<h3>Proyecto 2</h3>
+		<p>Detalles del proyecto 2.</p>
+		<a href="#proyectos">Volver a la sección de proyectos</a>
+	</div>
+
+	<div class="proyecto-detallado" id="proyecto3">
+		<h3>Proyecto 3</h3>
+		<p>Detalles del proyecto 3.</p>
+		<a href="#proyectos">Volver a la sección de proyectos</a>
+	</div>
+
+
+
+	<script src="script.js"></script>
+
+</body>
 </html>
