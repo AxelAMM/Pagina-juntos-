@@ -1,23 +1,85 @@
 .bienvenida {
-	text-align: center;
-	padding: 50px 0;
-	background-color: #f2f2f2;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f2f2f2;
+  background-image: linear-gradient(315deg, #f2f2f2 0%, #c4c4c4 74%);
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.bienvenida h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.bienvenida p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.bienvenida button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bienvenida button:hover {
+  background-color: #666;
+}
+
+.oculto {
+  display: none;
 }
 
 .carrera {
-	padding: 50px 0;
-	background-color: #e6e6e6;
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+.carrera{
+  display: block;
+}
+
+.carrera h2 {
+  font-size: 36px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .carrera ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .carrera li {
-	display: inline-block;
-	margin-right: 20px;
+  margin-right: 40px;
+}
+
+.carrera li:last-child {
+  margin-right: 0;
+}
+
+.carrera li a {
+  display: block;
+  text-align: center;
+  padding: 20px 30px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #4CAF50;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carrera li a:hover {
+  background-color: #3e8e41;
 }
 
 .proyecto {
@@ -30,9 +92,51 @@
 	display: block;
 }
 
-.proyecto:target {
-	display: block;
+.proyecto h2 {
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 20px;
+	color: #333;
+	text-transform: uppercase;
 }
+
+.proyecto p {
+	text-align: center;
+	font-size: 18px;
+	color: #666;
+	margin-bottom: 40px;
+}
+
+.proyecto ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.proyecto li {
+	display: inline-block;
+	margin-right: 20px;
+	background-color: #f2f2f2;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.proyecto li:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.proyecto a {
+	color: #333;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.proyecto a:hover {
+	color: #666;
+}
+
 
 .proyecto-detallado {
 	display: none;
