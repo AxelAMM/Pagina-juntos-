@@ -78,13 +78,62 @@ header a:hover
     color: white;
     background-image: linear-gradient(
         0deg,
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
     ,url("imagenes/teclado.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
+#hero h1{
+    color: white;
+}
+#proyectos{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+#proyectos .container{
+padding: 100px 0px;
+}
+#proyectos h2{
+    margin-top: 0;
+}
+#proyectos p{
+    display: none;
+}
+#proyecto .carta{
+
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/teclado.jpg");
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/teclado.jpg");
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("imagenes/teclado.jpg");
+}
+
+
+
+
 
 
 
