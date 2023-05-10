@@ -1,7 +1,9 @@
 *{
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body
 {
     font-family:'Roboto', sans-serif ;
@@ -30,27 +32,28 @@ button:hover
 }
 .container
 {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 }
 header
 {
     background-color: rgb(245, 245, 245);
 }
-header.logo
+header .logo
 {
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    color: black;
+    color: rgb(90, 173, 221);
     font-size:  1.45em;
 }
-header.container
+header .container
 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+/*Orden del quienes somos...*/
 header nav
 {
     display: flex;
@@ -58,16 +61,19 @@ header nav
     text-align: center;
     padding-bottom: 25 px;
 }
+/*algo de quienes somos...*/
 header a{
     padding: 5px 12px;
     text-decoration: none;
     font-weight:  bold;
     color: black;
 }
+/* Color al pasar sobre el quienes somos, sobre nos...*/
 header a:hover
 {
     color: blueviolet;
 }
+/*Primer cosa (imagen)*/
 #hero{
     display: flex;
     align-items: center;
@@ -89,21 +95,33 @@ header a:hover
 #hero h1{
     color: white;
 }
+/* Cosa de en medio */
+#medio .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+/*Ultima cosa (proyectos)*/
 #proyectos{
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
 }
 #proyectos .container{
-padding: 100px 0px;
+padding: 15px 12px;
 }
 #proyectos h2{
     margin-top: 0;
+    font-size: 3.2em;
 }
 #proyectos p{
     display: none;
 }
-#proyecto .carta{
+#proyectos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 20px;
+    border-radius: 15px;
 
 }
 .carta:first-child{
@@ -112,7 +130,7 @@ padding: 100px 0px;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("imagenes/teclado.jpg");
+    ,url("imagenes/perito.jpg");
 }
 .carta:nth-child(2){
     background-image: linear-gradient(
@@ -120,7 +138,7 @@ padding: 100px 0px;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("imagenes/teclado.jpg");
+    ,url("imagenes/bach.jpg");
 }
 .carta:nth-child(3){
     background-image: linear-gradient(
@@ -128,26 +146,72 @@ padding: 100px 0px;
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("imagenes/teclado.jpg");
+    ,url("imagenes/biologia.jpg");
+}
+footer{
+    background-color: rgb(230,230,230);
+}
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+footer .container{
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: flex-end;
 }
 
 
 
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container
+    {
+    flex-direction:  row; 
+    justify-content: space-between; 
+    }
+    header nav
+    {
+        flex-direction:  row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #medio .container{
+        display: flex;
+        justify-content: center;
+    }
+    #medio .texto-medio{
+        width: 50%;
+        text-align: initial;
+        padding: 0px 10px;
+    }
+    #proyectos .proyectos{
+        display: flex;
+        justify-content: center;
+    }
+    #proyectos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    #proyectos h3{
+        margin-top: 0;
+
+    }
+    #proyectos .carta{
+        padding: 50px;
+
+    }
+    footer .container{
+        justify-content: flex-end;
+    }
 
 
 
 
-@media (min-width: 850px){
-
-header .container
-{
-   flex-direction:  row; 
-   justify-content: space-between; 
-}
-header nav
-{
-    flex-direction:  row;
-    padding-bottom: 0;
-    padding-right: 20px;
-}
-}
+ }
