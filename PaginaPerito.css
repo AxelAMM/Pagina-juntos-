@@ -137,7 +137,7 @@ padding: 15px 12px;
         rgba(0, 0, 0, 0.13),
         rgba(0, 0, 0, 0.13)
     )
-    ,url("imagenes/bach.jpg");
+    ,url("imagenes/electro.jpg");
 }
 .carta:nth-child(3){
     background-image: linear-gradient(
